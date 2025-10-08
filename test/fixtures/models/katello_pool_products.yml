@@ -1,15 +1,23 @@
 basic_fedora:
     pool_id: <%= ActiveRecord::FixtureSet.identify(:pool_one) %>
     product_id: <%= ActiveRecord::FixtureSet.identify(:fedora) %>
+    created_at: <%= Time.now %>
+    updated_at: <%= Time.now %>
 
 basic_redhat:
     pool_id: <%= ActiveRecord::FixtureSet.identify(:pool_one) %>
     product_id: <%= ActiveRecord::FixtureSet.identify(:redhat) %>
+    created_at: <%= Time.now %>
+    updated_at: <%= Time.now %>
 
 basic_debian:
     pool_id: <%= ActiveRecord::FixtureSet.identify(:pool_one) %>
     product_id: <%= ActiveRecord::FixtureSet.identify(:debian) %>
+    created_at: <%= Time.now %>
+    updated_at: <%= Time.now %>
 
 other_sub_fedora:
     pool_id: <%= ActiveRecord::FixtureSet.identify(:pool_two) %>
     product_id: <%= ActiveRecord::FixtureSet.identify(:fedora) %>
+    created_at: <%= Time.now %>
+    updated_at: <%= Time.now %>

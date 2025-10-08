@@ -6,6 +6,8 @@ basic_subscription:
   cores: 2
   instance_multiplier: 1
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 other_subscription:
   name: "other subscription"
@@ -14,6 +16,8 @@ other_subscription:
   sockets: 3
   cores: 4
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 custom_subscription:
   name: "custom subscription"
@@ -22,3 +26,5 @@ custom_subscription:
   sockets: 3
   cores: 4
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>

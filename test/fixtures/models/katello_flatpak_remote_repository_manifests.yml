@@ -9,6 +9,8 @@ rhel9_runtime_manifest:
   application: false
   runtime: runtime/com.redhat.Platform/x86_64/el9
   flatpak_ref: runtime/com.redhat.Platform/x86_64/el9
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 rhel9_firefox_manifest_x86_84:
   name: firefox
@@ -21,6 +23,8 @@ rhel9_firefox_manifest_x86_84:
   application: true
   runtime: runtime/com.redhat.Platform/x86_64/el9
   flatpak_ref: app/org.mozilla.Firefox/x86_64/stable
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 rhel9_firefox_manifest_s390x:
   name: firefox
@@ -33,3 +37,5 @@ rhel9_firefox_manifest_s390x:
   application: true
   runtime: runtime/com.redhat.Platform/s390x/el9
   flatpak_ref: app/org.mozilla.Firefox/s390x/stable
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>

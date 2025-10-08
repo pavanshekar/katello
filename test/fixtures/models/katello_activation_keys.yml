@@ -3,24 +3,32 @@ simple_key:
   description: A simple activation key.
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
   auto_attach: true
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 another_simple_key:
   name: Another Simple Activation Key
   description: Another simple activation key.
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
   auto_attach: true
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 yet_another_simple_key:
   name: Yet Another Activation Key
   description: And another simple activation key!
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
   auto_attach: true
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 and_yet_another_simple_key:
   name: And Yet Another Simple Activation Key
   description: Here we go again!
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
   auto_attach: true
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 dev_key:
   name: DevKey
@@ -35,6 +43,8 @@ library_dev_staging_view_key:
   description: Here we go again!
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
   auto_attach: true
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 purpose_attributes_key:
   name: Activation Key
@@ -44,4 +54,6 @@ purpose_attributes_key:
   purpose_role: role name
   purpose_usage: usage name
   release_version: '7Server'
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 

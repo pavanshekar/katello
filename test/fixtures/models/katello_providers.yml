@@ -3,27 +3,37 @@ fedora_hosted:
   description:  Project and repository hosting.
   provider_type: 'Custom'
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 anonymous:
   name:         Anonymous
   description:  Project and repository hosting.
   provider_type: 'Anonymous'
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 redhat:
-  name: Red Hat Provider
+  name: Red Hat
   description: Provider of all your red hat needs
   provider_type: 'Red Hat'
   organization_id: <%= ActiveRecord::FixtureSet.identify(:empty_organization) %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 candlepin_redhat:
-  name: Red Hat Provider
+  name: Red Hat
   description: Provider of all your red hat needs
   provider_type: 'Red Hat'
   organization_id: <%= ActiveRecord::FixtureSet.identify(:organization2) %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 redhat2:
-  name: Red Hat Provider2
+  name: Red Hat
   description: Provider of all your red hat needs
   provider_type: 'Red Hat'
   organization_id: <%= ActiveRecord::FixtureSet.identify(:organization1) %>
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
